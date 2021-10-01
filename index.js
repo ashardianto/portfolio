@@ -13,19 +13,24 @@ menuToggle.addEventListener('click', function() {
 window.addEventListener('scroll', headingEffect);
 
 function headingEffect() {
+    
     if (window.scrollY >= 200) {
         heading.style.opacity = '0';
         thirdHeading.style.opacity = '0';       
         heading.style.transition = '1s ease-in-out';
         thirdHeading.style.transition = '1s ease-in-out';
+        heading.style.transform = 'translateX(-200px)'
+        thirdHeading.style.transform = 'translateX(200px)'
     } else {
         heading.style.opacity = '1';
         thirdHeading.style.opacity = '1';
+        heading.style.transform = 'translateX(0px)'
+        thirdHeading.style.transform = 'translateX(0px)'
     }
 
-    let value = window.scrollY;
-    heading.style.marginRight = value * 5 + 'px';
-    thirdHeading.style.marginLeft = value * 5 + 'px';
+    // let value = window.scrollY;
+    // heading.style.marginRight = value * 5 + 'px';
+    // thirdHeading.style.marginLeft = value * 5 + 'px';      
 }
 
 window.addEventListener('scroll', aboutEffect);
