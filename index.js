@@ -18,7 +18,7 @@ window.addEventListener('scroll', headingEffect);
 
 function headingEffect() {
     
-    if (window.scrollY >= 200) {
+    if (window.scrollY >= 300) {
         heading.style.opacity = '0';
         thirdHeading.style.opacity = '0';       
         heading.style.transition = '1s ease-in-out';
@@ -31,9 +31,6 @@ function headingEffect() {
         heading.style.transform = 'translateX(0px)'
         thirdHeading.style.transform = 'translateX(0px)'
     }
-
-    let value = window.scrollY;
-    flower4.style.right = value * 4 + 'px';
     // heading.style.marginRight = value * 5 + 'px';
     // thirdHeading.style.marginLeft = value * 5 + 'px';      
 }

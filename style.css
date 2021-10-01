@@ -131,6 +131,12 @@ nav {
     text-shadow: 1px 2px var(--darkred);
 }
 
+.sub-heading {
+    font-size: 48px;
+    width: 85%;
+    text-shadow: 2px 2px var(--darkred);
+}
+
 .content-par {
     font-size: 14px
 }
@@ -151,28 +157,28 @@ nav {
 
 .flower4 {
     position: absolute;
-    bottom: 280px;
+    bottom: 330px;
     right: 320px;
     width: 600px;
 }
 
 .flower1 {
     position: absolute;
-    bottom: 160px;
+    bottom: 210px;
     right: 450px;
     width: 300px;
 }
 
 .flower3 {
     position: absolute;
-    bottom: 300px;
+    bottom: 350px;
     right: 610px;
     width: 200px;
 }
 
 .bird {
     position: absolute;
-    bottom: 300px;
+    bottom: 350px;
     right: 650px;
     width: 200px;
 }
@@ -194,8 +200,8 @@ nav {
 .section-about {
     justify-content: center;
     align-items: center;
-    padding: 0px 20px;
     overflow-x: hidden;
+    margin-top: 200px;
 }
 
 .content-par {
@@ -203,28 +209,38 @@ nav {
     padding-bottom: 20px;
 }
 
-@media screen and (min-width: 1024px) {
-    .about-content {
-        display: flex;
-    }
-
-    .about-typography {
-        width: 100%;
-        height: 100%;
-        padding: 48px 24px;
-        margin-top: 20px;
-    }
-
-    .content-par {
-        font-size: 18px;
-    }
-
-    .img-container {
-        width: 100%;
-        height: 100%;
-        padding: 48px;
-    }
+.about-intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 500px;
+    background-image: url(./img/image-from-rawpixel-id-2229046-jpeg.jpg);
+    background-size: cover;
 }
+
+.about-intro > h2 {
+    color: white;
+    text-shadow: 2px 6px var(--darkred);
+}
+
+.about-typography {
+    width: 100%;
+    height: 100%;
+    padding: 48px 24px;
+    margin-top: 20px;
+}
+
+.content-par {
+    font-size: 18px;
+}
+
+.img-container {
+    width: 100%;
+    height: 100%;
+    padding: 48px;
+}
+
 
 /* PROJECT CONTENT */
 
