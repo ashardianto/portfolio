@@ -5,6 +5,10 @@ let thirdHeading = document.getElementById('third-heading');
 let subHeading = document.getElementById('sub-heading');
 let aboutImage = document.getElementById('about-image');
 let contentPar = document.getElementById('content-par');
+let flower4 = document.getElementById('.flower4')
+let flower3 = document.getElementById('.flower3')
+let flower1 = document.getElementById('.flower1')
+let bird = document.getElementById('.bird')
 
 menuToggle.addEventListener('click', function() {
     nav.classList.toggle('nav-listdd');
@@ -28,10 +32,13 @@ function headingEffect() {
         thirdHeading.style.transform = 'translateX(0px)'
     }
 
-    // let value = window.scrollY;
+    let value = window.scrollY;
+    flower4.style.right = value * 4 + 'px';
     // heading.style.marginRight = value * 5 + 'px';
     // thirdHeading.style.marginLeft = value * 5 + 'px';      
 }
+
+
 
 window.addEventListener('scroll', aboutEffect);
 

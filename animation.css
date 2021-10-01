@@ -1,0 +1,24 @@
+.flower4 {
+    animation: transitionIn 7s;
+}
+
+.flower3 {
+    animation: transitionIn 14s;
+}
+
+.flower1 {
+    animation: transitionIn 21s;
+}
+
+.bird {
+    animation: transitionIn 25s;
+}
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
