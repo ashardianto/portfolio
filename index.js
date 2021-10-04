@@ -46,7 +46,7 @@ function headingEffect() {
 window.addEventListener('scroll', aboutEffect);
 
 function aboutEffect() {
-    if (window.scrollY >= 1500) {
+    if (window.scrollY >= 1100) {
         subHeading.style.opacity = '1';
         subHeading.style.transform = 'translateX(0px)';
         subHeading.style.transition = '0.5s ease-in-out';

@@ -23,6 +23,7 @@ body {
     font-size: 18px;
     font-weight: 400;
     line-height: 1.45;
+    background-color: #f0f0f0;
 }
 
 .heading {
@@ -155,6 +156,10 @@ nav {
     background-position-x: 950px;
 }
 
+.welcome-image {
+    display: flex;
+}
+
 .flower4 {
     position: absolute;
     bottom: 330px;
@@ -195,6 +200,110 @@ nav {
     color: var(--darkblue);
 }
 
+@media screen and (max-width: 1024px) {
+    .section-welcome {
+        background-position-x: 600px;
+        background-size: 800px;
+    }
+
+    .flower4 {
+        position: absolute;
+        bottom: 380px;
+        right: 50px;
+        width: 400px;
+    }
+    
+    .flower1 {
+        position: absolute;
+        bottom: 260px;
+        right: 100px;
+        width: 200px;
+    }
+    
+    .flower3 {
+        position: absolute;
+        bottom: 330px;
+        right: 250px;
+        width: 200px;
+    }
+    
+    .bird {
+        position: absolute;
+        bottom: 330px;
+        right: 200px;
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+
+    .flower4 {
+        position: absolute;
+        bottom: 300px;
+        right: 50px;
+        width: 500px;
+    }
+    
+    .flower1 {
+        position: absolute;
+        bottom: 200px;
+        right: 100px;
+        width: 280px;
+    }
+    
+    .flower3 {
+        position: absolute;
+        bottom: 280px;
+        right: 250px;
+        width: 230px;
+    }
+    
+    .bird {
+        position: absolute;
+        bottom: 270px;
+        right: 280px;
+        width: 220px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .section-welcome {
+        background-position-x: 300px;
+        background-size: 800px;
+    }
+
+    .flower4 {
+        position: absolute;
+        bottom: 380px;
+        right: 50px;
+        width: 400px;
+    }
+    
+    .flower1 {
+        position: absolute;
+        bottom: 250px;
+        right: 100px;
+        width: 220px;
+    }
+    
+    .flower3 {
+        position: absolute;
+        bottom: 330px;
+        right: 250px;
+        width: 180px;
+    }
+    
+    .bird {
+        position: absolute;
+        bottom: 330px;
+        right: 280px;
+        width: 180px;
+    }
+}
+
+
+
 /* SECTION ABOUT */
 
 .section-about {
@@ -213,21 +322,25 @@ nav {
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 100vh;
-    width: 1200px;
+    height: 80vh;
+    width: 100%;
     margin: 0 auto;
+    background-image: url(./img/black-plain-concrete-textured.jpg);
+    background-size: cover;
 }
 
 .about-intro > h2 {
+    width: 1200px;
     color: white;
     text-shadow: 2px 6px var(--darkred);
     cursor: default;
+    transition: 0.25s ease-in-out;
 }
 
 .about-intro > h2:hover {
     color: var(--darkred);
     text-shadow: 2px 3px var(--darkblue);
-    transition: 0.75s ease-in-out;
+    transition: 0.25s ease-in-out;
 }
 
 .about-paragraph {
